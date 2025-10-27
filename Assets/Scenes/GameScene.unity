@@ -2522,7 +2522,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286707022}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2601,7 +2601,7 @@ MonoBehaviour:
   acceleration: 20
   useGravity: 1
   gravity: -9.81
-  cameraTransform: {fileID: 330585546}
+  cameraTransform: {fileID: 0}
 --- !u!114 &1286707030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2618,7 +2618,7 @@ MonoBehaviour:
   mouseSensitivity: 500
   pitchMin: -85
   pitchMax: 85
-  lockCursor: 1
+  lockCursor: 0
 --- !u!1 &1321805758
 GameObject:
   m_ObjectHideFlags: 0
