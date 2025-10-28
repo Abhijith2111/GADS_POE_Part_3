@@ -20,7 +20,6 @@ public class Pickup : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             pickedFX.Play();
-            // Register collection for objectives
             ObjectiveManager.Instance?.RegisterPickupCollected(pickupType, amount);
 
             // Tell SpawnManager to free the spawn point and respawn this prefab
