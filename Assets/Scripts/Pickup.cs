@@ -13,10 +13,13 @@ public class Pickup : MonoBehaviour
     [HideInInspector] public int prefabIndex = -1;      // index into SpawnManager.pickupPrefabs
     [HideInInspector] public int spawnPointIndex = -1;  // which spawn point this instance occupies
 
+    [SerializeField] AudioSource pickedFX;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            pickedFX.Play();
             // Register collection for objectives
             ObjectiveManager.Instance?.RegisterPickupCollected(pickupType, amount);
 
